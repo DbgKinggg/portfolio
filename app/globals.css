@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.highlight-border {
+  box-shadow: 0px 1px 0px rgba(124, 58, 237), 0px 2px 0px rgb(132, 73, 234),
+    0px 3px 0px rgb(146, 94, 236), 0px 4px 0px rgb(160, 116, 235),
+    0px 5px 0px rgb(172, 139, 230), 0px 6px 1px rgba(124, 58, 237, 0.1),
+    0px 0px 5px rgba(124, 58, 237, 0.1), 0px 1px 3px rgba(124, 58, 237, 0.3),
+    0px 3px 5px rgba(124, 58, 237, 0.2), -4px 8px 8px rgba(124, 58, 237, 0.1),
+    -8px 16px 16px rgba(0, 0, 0, 0.37), -16px 32px 32px rgba(124, 58, 237, 0.25),
+    -32px 64px 64px rgba(124, 58, 237, 0.25);
+}
