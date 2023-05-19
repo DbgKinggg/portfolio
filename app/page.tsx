@@ -13,7 +13,7 @@ import LanguagesCard from './(site)/components/cards/LanguagesCard'
 export default function Home() {
   return (
     <>
-      <main className="grid min-h-screen overflow-hidden bg-black text-white lg:grid-cols-3 pt-32 pb-20 md:pt-0 md:pb-6">
+      <main className="grid min-h-screen overflow-hidden bg-black pb-20 pt-32 text-white md:pb-6 md:pt-0 lg:grid-cols-3">
         <MainIntro />
         <MainPanel />
       </main>
@@ -23,8 +23,8 @@ export default function Home() {
 
 function MainPanel() {
   return (
-    <section className="relative mt-10 md:mt-20 lg:mt-32 md:mb-10 z-10 mx-5 lg:col-span-2 lg:flex lg:items-center lg:justify-center max-w-5xl">
-      <div className="grid gap-y-3 mt-4 lg:mt-0 lg:grid-cols-6 lg:gap-x-4 lg:gap-y-4 relative">
+    <section className="relative z-10 mx-5 mt-10 max-w-5xl md:mb-10 md:mt-20 lg:col-span-2 lg:mt-32 lg:flex lg:items-center lg:justify-center">
+      <div className="relative mt-4 grid gap-y-3 lg:mt-0 lg:grid-cols-6 lg:gap-x-4 lg:gap-y-4">
         <GradientBlob />
         <IntroCard />
         <SocialWrapperCards />
