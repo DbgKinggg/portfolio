@@ -29,7 +29,7 @@ function GohanGoCard() {
           </svg>
         </Link>
       </div>
-      <p className="relative z-10 max-w-xs text-xl capitalize text-white/95 lg:text-3xl">
+      <p className="relative z-10 max-w-xs text-xl capitalize text-white/95 lg:text-2xl">
         An NFT collection of monkey Gohan on Ethereum
       </p>
       <Image

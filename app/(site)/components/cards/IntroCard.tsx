@@ -9,7 +9,7 @@ function IntroCard() {
       }}
     >
       <h2 className="text-2xl font-semibold text-white/80 md:text-5xl">
-        Learn Something New Everyday
+        Talk is cheap, show me the code
       </h2>
       <p className="text-md mt-2 text-gray-500 md:mt-8 md:max-w-md md:text-lg">
         {`I love both Frontend and Backend things, and I'm a big fan of blockchain technology.`}

@@ -16,7 +16,7 @@ function AscendantCard() {
       <p className="relative z-30 mt-3 max-w-xs text-xl capitalize text-[#c5c7de]/90 lg:mt-0 lg:text-right lg:text-2xl">
         Web3 On-chain Astrology
       </p>
-      <p className="absolute bottom-2 left-2 z-30 text-white/70">{`(I didn't design it, my job was to bring this to life!)`}</p>
+      <p className="absolute bottom-0 left-4 z-30 text-white/70 text-xs lg:text-base">{`(I didn't design it, my job was to bring this to life!)`}</p>
       <Image
         src="/images/gradient-ball.png"
         width={200}
@@ -31,6 +31,7 @@ function AscendantCard() {
         sizes="100vw"
         alt="Ascendant demo image - ruling star"
         className="absolute bottom-0 right-0 z-20 h-64 w-auto translate-x-48 translate-y-6 rotate-6 rounded-3xl shadow-xl transition-all hover:translate-x-0 hover:translate-y-0 hover:rotate-0 lg:translate-x-1/4"
+        loading="eager"
       />
       <Image
         src="/images/ascendant-demo2.png"
@@ -39,6 +40,7 @@ function AscendantCard() {
         sizes="100vw"
         alt="Ascendant demo image - best token"
         className="absolute bottom-0 right-0 z-10 h-64 w-auto translate-x-20 translate-y-6 rotate-3 rounded-3xl shadow-xl transition-all hover:-translate-x-20 hover:translate-y-0 hover:-rotate-3 lg:translate-x-0 lg:hover:-translate-x-1/2"
+        loading="eager"
       />
       <Image
         src="/images/ascendant-demo3.png"
@@ -47,6 +49,7 @@ function AscendantCard() {
         sizes="100vw"
         alt="Ascendant demo image - good luck charms"
         className="absolute bottom-0 right-0 h-64 w-auto -translate-x-1/3 translate-y-6 rotate-1 rounded-3xl shadow-xl transition-all hover:-translate-x-2/3 hover:translate-y-0 hover:-rotate-6"
+        loading="eager"
       />
     </div>
   )
