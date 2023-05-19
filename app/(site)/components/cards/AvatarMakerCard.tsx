@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function AvatarMakerCard() {
     return (
-        <div className="w-full highlight-border relative z-10 rounded-3xl px-10 py-10 lg:col-span-3 lg:px-10 lg:py-10 min-h-[380px] overflow-hidden"
+        <div className="w-full highlight-border relative z-10 rounded-3xl px-10 py-10 lg:col-span-3 lg:px-10 lg:py-10 min-h-[300px] overflow-hidden"
             style={{
                 background: 'conic-gradient(at right bottom, rgb(17, 94, 89), rgb(124, 58, 237), rgb(38, 38, 38))',
             }}
