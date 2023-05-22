@@ -11,7 +11,9 @@ function TwitterToolsCard() {
       >
         app.gohango.art
       </a>
-      <p className="text-white/80 mt-6">Manage Twitter Accounts and Automation</p>
+      <p className="mt-6 text-white/80">
+        Manage Twitter Accounts and Automation
+      </p>
       <Image
         className="absolute bottom-0 left-1/2 z-0 h-auto w-4/5 max-w-sm -translate-x-1/2 rounded-t-3xl"
         src="/images/twitter-tool.png"

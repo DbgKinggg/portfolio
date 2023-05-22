@@ -16,7 +16,7 @@ function AscendantCard() {
       <p className="relative z-30 mt-3 max-w-xs text-xl capitalize text-[#c5c7de]/90 lg:mt-0 lg:text-right lg:text-2xl">
         Web3 On-chain Astrology
       </p>
-      <p className="absolute bottom-0 left-4 z-30 text-white/70 text-xs lg:text-base">{`(I didn't design it, my job was to bring this to life!)`}</p>
+      <p className="absolute bottom-0 left-4 z-30 text-xs text-white/70 lg:text-base">{`(I didn't design it, my job was to bring this to life!)`}</p>
       <Image
         src="/images/gradient-ball.png"
         width={200}
