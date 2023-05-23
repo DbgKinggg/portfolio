@@ -7,37 +7,38 @@ function SkillsCard() {
     direction: 'left' | 'right'
     skills: string[]
   }[] = [
-    {
-      key: 1,
-      speed: 30,
-      direction: 'left',
-      skills: [
-        'MySQL',
-        'PostgreSQL',
-        'AWS',
-        'Docker',
-        'Javascript',
-        'TypeScript',
-        'PHP',
-        'Node.js',
-      ],
-    },
-    {
-      key: 2,
-      speed: 25,
-      direction: 'right',
-      skills: [
-        'React',
-        'Next.js',
-        'Vue',
-        'Chakra ui',
-        'Styled-components',
-        'Tailwind',
-        'Solidity',
-        'Web3.js',
-      ],
-    },
-  ]
+      {
+        key: 1,
+        speed: 30,
+        direction: 'left',
+        skills: [
+          'MySQL',
+          'PostgreSQL',
+          'AWS',
+          'Vercel',
+          'Docker',
+          'Javascript',
+          'TypeScript',
+          'PHP',
+          'Node.js',
+        ],
+      },
+      {
+        key: 2,
+        speed: 25,
+        direction: 'right',
+        skills: [
+          'React',
+          'Next.js',
+          'Vue',
+          'Chakra ui',
+          'Styled-components',
+          'Tailwind',
+          'Solidity',
+          'Web3.js',
+        ],
+      },
+    ]
 
   return (
     <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
