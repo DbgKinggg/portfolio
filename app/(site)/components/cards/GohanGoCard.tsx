@@ -15,7 +15,7 @@ function GohanGoCard() {
             gohango.art
           </a>
         </div>
-        <Link href={`https://twitter.com/GohanGoNFT`} target="_blank">
+        <Link href={`https://twitter.com/GohanGoNFT`} target="_blank" aria-label="Twitter">
           <svg
             className="h-10 w-10 transition group-hover:scale-105"
             xmlns="http://www.w3.org/2000/svg"
