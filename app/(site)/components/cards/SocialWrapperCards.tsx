@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function SocialWrapperCards() {
   return (
-    <div className="grid grid-cols-2 gap-x-1 lg:col-span-2 lg:gap-y-2">
+    <div className="grid grid-cols-2 gap-x-2 lg:gap-x-1 lg:col-span-2 lg:gap-y-2">
       <TwitterCard />
       <ContactCard />
     </div>
@@ -65,7 +65,7 @@ function ContactCard() {
         </Link>
       </div>
       <label className="mt-8 text-lg text-gray-300 md:mt-auto lg:text-2xl">
-        Contact Me
+        Contact me
       </label>
     </div>
   )

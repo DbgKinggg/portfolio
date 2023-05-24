@@ -2,15 +2,15 @@ function LanguagesCard() {
   const languages = [
     {
       name: 'English',
-      textColor: 'text-white/70',
+      textColor: 'text-white/70 hover:text-white/90',
     },
     {
       name: 'Cantonese',
-      textColor: 'text-white/60',
+      textColor: 'text-white/60 hover:text-white/90',
     },
     {
       name: 'Mandarin',
-      textColor: 'text-white/50',
+      textColor: 'text-white/50 hover:text-white/90',
     },
   ];
 
@@ -21,7 +21,7 @@ function LanguagesCard() {
         {
           languages.map(language => (
             <div
-              className={`text-3xl font-bold uppercase tracking-widest text-white/70 lg:text-2xl xl:text-3xl cursor-default transition-all transform hover:-translate-y-2 ${language.textColor}`}
+              className={`text-3xl font-bold uppercase tracking-widest lg:text-2xl xl:text-3xl cursor-default transition-all transform hover:-translate-y-2 ${language.textColor}`}
               key={language.name}
             >
               {language.name}

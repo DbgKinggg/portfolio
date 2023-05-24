@@ -12,7 +12,7 @@ function IntroCard() {
         Talk is cheap, show me the code
       </h2>
       <p className="text-md mt-2 text-gray-500 md:mt-8 md:max-w-md md:text-lg">
-        {`I love both Frontend and Backend things, and I'm a big fan of blockchain technology.`}
+        {`I do a little bit of Frontend, a little bit of Backend and a little bit of web3 things!`}
       </p>
     </div>
   )

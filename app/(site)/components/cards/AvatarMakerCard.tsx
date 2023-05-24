@@ -38,7 +38,7 @@ function AvatarMakerCard() {
         </Link>
       </div>
       <Image
-        className="absolute bottom-0 left-1/2 z-0 h-auto w-4/5 max-w-sm -translate-x-1/2 rounded-t-3xl"
+        className="absolute bottom-0 left-1/2 z-0 h-auto w-4/5 max-w-sm -translate-x-1/2 rounded-t-3xl transition lg:translate-y-6 lg:hover:translate-y-0"
         src="/images/gohango-nft-maker.png"
         width="0"
         height="0"

@@ -71,8 +71,8 @@ function MainIntro() {
         <h1 className="mt-3 text-center text-3xl font-bold md:mt-5 md:text-5xl">
           Samuel Chen
         </h1>
-        <p className="md:text-md mt-3 text-center text-gray-300 md:mt-1">
-          Melbourne Based Full-Stack Developer
+        <p className="md:text-md mt-3 px-4 text-center text-gray-300 md:mt-1">
+          Full-Stack Developer Based In Melbourne, Australia
         </p>
       </div>
       <div className="absolute left-0 z-0 h-72 max-h-96 w-screen -translate-x-[65%] scale-150 rounded-full bg-[#7c79bf] md:h-screen md:-translate-x-[99%] lg:fixed lg:top-1/2 lg:max-h-none lg:-translate-y-1/2"></div>
