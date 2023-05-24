@@ -7,53 +7,45 @@ function SkillsCard() {
     direction: 'left' | 'right'
     skills: string[]
   }[] = [
-      {
-        key: 1,
-        speed: 30,
-        direction: 'left',
-        skills: [
-          'MySQL',
-          'PostgreSQL',
-          'AWS',
-          'Vercel',
-          'Docker',
-          'Javascript',
-          'TypeScript',
-          'PHP',
-          'Node.js',
-        ],
-      },
-      {
-        key: 2,
-        speed: 25,
-        direction: 'right',
-        skills: [
-          'React',
-          'Next.js',
-          'Vue',
-          'Chakra ui',
-          'Styled-components',
-          'Tailwind',
-          'Solidity',
-          'Web3.js',
-        ],
-      },
-    ]
+    {
+      key: 1,
+      speed: 30,
+      direction: 'left',
+      skills: [
+        'MySQL',
+        'PostgreSQL',
+        'AWS',
+        'Vercel',
+        'Docker',
+        'Javascript',
+        'TypeScript',
+        'PHP',
+        'Node.js',
+      ],
+    },
+    {
+      key: 2,
+      speed: 25,
+      direction: 'right',
+      skills: [
+        'React',
+        'Next.js',
+        'Vue',
+        'Chakra ui',
+        'Styled-components',
+        'Tailwind',
+        'Solidity',
+        'Web3.js',
+      ],
+    },
+  ]
 
-  const learningList = [
-    'Svelte',
-    'SolidJS',
-    'SST',
-    'ChatGPT',
-    'Figma'
-  ];
+  const learningList = ['Svelte', 'SolidJS', 'SST', 'ChatGPT', 'Figma']
 
   return (
     <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
-      <h3 className="px-10 text-3xl font-bold text-gray-50">
-        Techs that
-      </h3>
-      <p className="text-gray-400 px-10 text-lg mt-2">I use...</p>
+      <h3 className="px-10 text-3xl font-bold text-gray-50">Techs that</h3>
+      <p className="mt-2 px-10 text-lg text-gray-400">I use...</p>
       <div className="masked-fade-out">
         {skillList.map((skills) => (
           <InfiniteLooper
@@ -73,11 +65,10 @@ function SkillsCard() {
             </div>
           </InfiniteLooper>
         ))}
-        <p className="text-gray-400 px-10 text-lg mt-4">I plan to learn/learning...</p>
-        <InfiniteLooper
-          direction={`left`}
-          speed={10}
-        >
+        <p className="mt-4 px-10 text-lg text-gray-400">
+          I plan to learn/learning...
+        </p>
+        <InfiniteLooper direction={`left`} speed={10}>
           <div className="mr-4 mt-5 flex items-center justify-center space-x-4 text-center lg:mt-6">
             {learningList.map((learningItem) => (
               <div

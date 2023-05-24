@@ -1,26 +1,26 @@
-"use client";
+'use client'
 import Image from 'next/image'
-import { MouseEvent, useRef } from 'react';
+import { MouseEvent, useRef } from 'react'
 
 function MainIntro() {
-  let bounds;
-  const inputRef = useRef<HTMLDivElement>(null);
-  const glowRef = useRef<HTMLDivElement>(null);
+  let bounds
+  const inputRef = useRef<HTMLDivElement>(null)
+  const glowRef = useRef<HTMLDivElement>(null)
   const rotateToMouse = (e: MouseEvent<HTMLDivElement>) => {
     if (inputRef.current === null || glowRef.current === null) {
-      return;
+      return
     }
 
-    bounds = inputRef.current.getBoundingClientRect();
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const leftX = mouseX - bounds.x;
-    const topY = mouseY - bounds.y;
+    bounds = inputRef.current.getBoundingClientRect()
+    const mouseX = e.clientX
+    const mouseY = e.clientY
+    const leftX = mouseX - bounds.x
+    const topY = mouseY - bounds.y
     const center = {
       x: leftX - bounds.width / 2,
       y: topY - bounds.height / 2,
-    };
-    const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
+    }
+    const distance = Math.sqrt(center.x ** 2 + center.y ** 2)
 
     inputRef.current.style.transform = `
       scale3d(1.07, 1.07, 1.07)
@@ -30,7 +30,7 @@ function MainIntro() {
         0,
         ${Math.log(distance) * 3}deg
       )
-    `;
+    `
 
     glowRef.current.style.backgroundImage = `
       radial-gradient(
@@ -40,22 +40,23 @@ function MainIntro() {
         #ffffff55,
         #0000000f
       )
-    `;
-  };
+    `
+  }
   const removeListener = (e: MouseEvent<HTMLDivElement>) => {
     if (inputRef.current === null) {
-      return;
+      return
     }
 
-    inputRef.current.style.transform = '';
-    inputRef.current.style.background = '';
-  };
+    inputRef.current.style.transform = ''
+    inputRef.current.style.background = ''
+  }
 
   return (
     <section className="relative flex max-h-screen flex-col items-center justify-center">
       <div className="z-10 flex flex-col items-center justify-center lg:fixed lg:top-1/2 lg:-translate-y-1/2">
-        <div ref={inputRef}
-          className="card rounded-3xl group"
+        <div
+          ref={inputRef}
+          className="card group rounded-3xl"
           onMouseLeave={removeListener}
           onMouseMove={rotateToMouse}
         >

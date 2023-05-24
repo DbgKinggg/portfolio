@@ -22,7 +22,7 @@ function AscendantCard() {
         width={200}
         height={200}
         alt="gradient ball image"
-        className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 lg:top-1/2 lg:left-0 lg:-translate-x-1/2 lg:translate-y-1/3"
+        className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2 lg:left-0 lg:top-1/2 lg:-translate-x-1/2 lg:translate-y-1/3"
       />
       <Image
         src="/images/ascendant-demo.png"

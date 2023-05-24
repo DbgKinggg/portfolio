@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function SocialWrapperCards() {
   return (
-    <div className="grid grid-cols-2 gap-x-2 lg:gap-x-1 lg:col-span-2 lg:gap-y-2">
+    <div className="grid grid-cols-2 gap-x-2 lg:col-span-2 lg:gap-x-1 lg:gap-y-2">
       <TwitterCard />
       <ContactCard />
     </div>
@@ -42,7 +42,7 @@ function ContactCard() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            className="h-10 w-10 lg:h-14 lg:w-14 transition-all hover:scale-105"
+            className="h-10 w-10 transition-all hover:scale-105 lg:h-14 lg:w-14"
           >
             <path
               fill="white"
@@ -55,7 +55,7 @@ function ContactCard() {
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"
             viewBox="0 0 122.88 122.88"
-            className="h-9 w-9 lg:h-12 lg:w-12 transition-all hover:scale-105"
+            className="h-9 w-9 transition-all hover:scale-105 lg:h-12 lg:w-12"
           >
             <path
               fill="white"
