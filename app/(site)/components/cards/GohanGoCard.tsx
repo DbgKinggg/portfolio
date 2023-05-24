@@ -8,7 +8,7 @@ function GohanGoCard() {
         <div>
           <h3 className="text-3xl font-bold text-gray-50">GohanGo!!</h3>
           <a
-            className="text-black/50 lg:text-lg"
+            className="text-white/60 lg:text-lg"
             href="https://gohango.art/"
             target="_blank"
           >

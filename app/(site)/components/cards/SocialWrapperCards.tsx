@@ -15,6 +15,7 @@ function TwitterCard() {
       href="https://twitter.com/DbgKinggg"
       target="_blank"
       className="group flex h-auto w-full flex-col rounded-3xl border-2 border-gray-400 bg-[#8ecdf8] px-4 py-4 lg:col-span-2"
+      aria-label="Twitter"
     >
       <svg
         className="h-10 w-10 transition group-hover:scale-105 lg:h-14 lg:w-14"
@@ -38,7 +39,11 @@ function ContactCard() {
   return (
     <div className="group flex h-auto w-full flex-col rounded-3xl border-2 border-gray-800 bg-[#171a22]/90 px-4 py-4 lg:col-span-2">
       <div className="flex items-center space-x-2">
-        <Link href="https://github.com/DbgKinggg" target="_blank">
+        <Link
+          href="https://github.com/DbgKinggg"
+          target="_blank"
+          aria-label="Github"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -50,7 +55,7 @@ function ContactCard() {
             ></path>
           </svg>
         </Link>
-        <Link href="mailto:samuelyimingchen@gmail.com">
+        <Link href="mailto:samuelyimingchen@gmail.com" aria-label="Email me">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"

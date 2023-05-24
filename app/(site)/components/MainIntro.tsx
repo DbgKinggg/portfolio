@@ -66,6 +66,7 @@ function MainIntro() {
             width="200"
             height="200"
             alt="avatar"
+            loading="eager"
           />
           <div ref={glowRef} className="glow rounded-3xl" />
         </div>
