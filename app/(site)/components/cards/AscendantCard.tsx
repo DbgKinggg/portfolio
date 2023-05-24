@@ -48,7 +48,7 @@ function AscendantCard() {
         height="0"
         sizes="100vw"
         alt="Ascendant demo image - good luck charms"
-        className="absolute bottom-0 right-0 h-64 w-auto -translate-x-1/3 translate-y-6 rotate-1 rounded-3xl shadow-xl transition-all hover:-translate-x-2/3 hover:translate-y-0 hover:-rotate-6"
+        className="absolute bottom-0 right-0 h-64 w-auto -translate-x-1/3 translate-y-6 -rotate-3 rounded-3xl shadow-xl transition-all hover:-translate-x-2/3 hover:translate-y-0 hover:-rotate-6"
         loading="eager"
       />
     </div>

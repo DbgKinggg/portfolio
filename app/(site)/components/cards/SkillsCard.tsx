@@ -40,12 +40,21 @@ function SkillsCard() {
       },
     ]
 
+  const learningList = [
+    'Svelte',
+    'SolidJS',
+    'SST',
+    'ChatGPT',
+    'Figma'
+  ];
+
   return (
     <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
       <h3 className="px-10 text-3xl font-bold text-gray-50">
-        Techs that I use
+        Techs that
       </h3>
-      <div className="masked-fade-out mt-6">
+      <p className="text-gray-400 px-10 text-lg mt-2">I use...</p>
+      <div className="masked-fade-out">
         {skillList.map((skills) => (
           <InfiniteLooper
             direction={skills.direction}
@@ -64,6 +73,22 @@ function SkillsCard() {
             </div>
           </InfiniteLooper>
         ))}
+        <p className="text-gray-400 px-10 text-lg mt-4">I plan to learn/learning...</p>
+        <InfiniteLooper
+          direction={`left`}
+          speed={10}
+        >
+          <div className="mr-4 mt-5 flex items-center justify-center space-x-4 text-center lg:mt-6">
+            {learningList.map((learningItem) => (
+              <div
+                key={learningItem}
+                className="cursor-default self-stretch whitespace-nowrap rounded-full border border-slate-600 bg-slate-800/80 px-6 py-2 text-slate-300 transition-all hover:border-slate-400"
+              >
+                {learningItem}
+              </div>
+            ))}
+          </div>
+        </InfiniteLooper>
       </div>
     </div>
   )
