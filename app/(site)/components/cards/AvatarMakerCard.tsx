@@ -44,6 +44,7 @@ function AvatarMakerCard() {
         height="0"
         sizes="100vw"
         alt="GohanGo!! image"
+        loading='eager'
       />
     </div>
   )
