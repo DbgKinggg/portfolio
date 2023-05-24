@@ -55,7 +55,7 @@ function ContactCard() {
             ></path>
           </svg>
         </Link>
-        <Link href="mailto:samuelyimingchen@gmail.com" aria-label="Email me">
+        <Link href="mailto:samuelchen0606@gmail.com" aria-label="Email me">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             data-name="Layer 1"
