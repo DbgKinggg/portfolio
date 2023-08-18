@@ -6,7 +6,7 @@ function GohanGoCard() {
     <div className="relative z-10 flex min-h-[350px] w-full flex-col justify-between overflow-hidden rounded-3xl bg-[#fdb7c1] px-10 py-10 shadow-md shadow-[#fdb7c1] lg:col-span-3 lg:px-10 lg:py-10">
       <div className="relative z-10 flex justify-between">
         <div>
-          <h3 className="text-3xl font-bold text-gray-50">GohanGo!!</h3>
+          <h3 className="text-3xl font-bold text-gray-50">GohanGo!! 🐵</h3>
           <a
             className="text-white/60 lg:text-lg"
             href="https://gohango.art/"

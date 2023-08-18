@@ -4,7 +4,7 @@ function AscendantCard() {
   return (
     <div className="relative z-10 flex min-h-[400px] w-full flex-col items-start overflow-hidden rounded-3xl bg-gradient-to-br from-[#6f4988] to-[#5059b6] px-10 py-10 lg:col-span-4 lg:min-h-[350px] lg:flex-row lg:justify-between lg:px-10 lg:py-10">
       <div>
-        <h3 className="text-3xl font-bold text-gray-50">Ascendant</h3>
+        <h3 className="text-3xl font-bold text-gray-50">Ascendant 🔮</h3>
         <a
           className="text-gray-300"
           href="https://ascendant.fun/"

@@ -9,6 +9,7 @@ import RoboticaCard from './cards/RoboticaCard'
 import SkillsCard from './cards/SkillsCard'
 import LanguagesCard from './cards/LanguagesCard'
 import BlogsCard from './cards/BlogsCard'
+import L2SummerCard from './cards/L2SummerCard'
 import Footer from './Footer'
 
 function MainPanel() {
@@ -18,8 +19,9 @@ function MainPanel() {
         <GradientBlob />
         <IntroCard />
         <SocialWrapperCards />
-        <RoboticaCard />
+        <L2SummerCard />
         <BlogsCard />
+        <RoboticaCard />
         <GohanGoCard />
         <AvatarMakerCard />
         <TwitterToolsCard />

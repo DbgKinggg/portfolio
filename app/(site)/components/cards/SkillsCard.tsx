@@ -7,44 +7,44 @@ function SkillsCard() {
     direction: 'left' | 'right'
     skills: string[]
   }[] = [
-    {
-      key: 1,
-      speed: 30,
-      direction: 'left',
-      skills: [
-        'MySQL',
-        'PostgreSQL',
-        'AWS',
-        'Vercel',
-        'Docker',
-        'Javascript',
-        'TypeScript',
-        'PHP',
-        'Node.js',
-      ],
-    },
-    {
-      key: 2,
-      speed: 25,
-      direction: 'right',
-      skills: [
-        'React',
-        'Next.js',
-        'Vue',
-        'Chakra ui',
-        'Styled-components',
-        'Tailwind',
-        'Solidity',
-        'Web3.js',
-      ],
-    },
-  ]
+      {
+        key: 1,
+        speed: 30,
+        direction: 'left',
+        skills: [
+          'MySQL',
+          'PostgreSQL',
+          'AWS',
+          'Vercel',
+          'Docker',
+          'Javascript',
+          'TypeScript',
+          'PHP',
+          'Node.js',
+        ],
+      },
+      {
+        key: 2,
+        speed: 25,
+        direction: 'right',
+        skills: [
+          'React',
+          'Next.js',
+          'Vue',
+          'Chakra ui',
+          'Styled-components',
+          'Tailwind',
+          'Solidity',
+          'Web3.js',
+        ],
+      },
+    ]
 
   const learningList = ['Svelte', 'SolidJS', 'SST', 'ChatGPT', 'Figma']
 
   return (
     <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
-      <h3 className="px-10 text-3xl font-bold text-gray-50">Techs that</h3>
+      <h3 className="px-10 text-3xl font-bold text-gray-50">Techs that 👨‍💻</h3>
       <p className="mt-2 px-10 text-lg text-gray-400">I use...</p>
       <div className="masked-fade-out">
         {skillList.map((skills) => (

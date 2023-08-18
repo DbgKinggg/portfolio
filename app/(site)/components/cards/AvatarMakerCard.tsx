@@ -13,7 +13,7 @@ function AvatarMakerCard() {
       <div className="relative z-10 flex justify-between">
         <div>
           <h3 className="relative z-10 text-3xl font-bold text-gray-50">
-            Avatar Maker
+            Avatar Maker 😉
           </h3>
           <a
             className="text-gray-400 lg:text-lg"
