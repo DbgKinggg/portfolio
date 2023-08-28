@@ -36,11 +36,12 @@ function SkillsCard() {
           'Tailwind',
           'Solidity',
           'Web3.js',
+          'viem'
         ],
       },
     ]
 
-  const learningList = ['Svelte', 'SolidJS', 'SST', 'ChatGPT', 'Figma']
+  const learningList = ['Svelte', 'SolidJS', 'SST', 'ChatGPT', 'Figma', 'Go']
 
   return (
     <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
