@@ -1,9 +1,17 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import Link from 'next/link'
 import Image from 'next/image'
 
 function GohanGoCard() {
   return (
-    <div className="relative z-10 flex min-h-[350px] w-full flex-col justify-between overflow-hidden rounded-3xl bg-[#fdb7c1] px-10 py-10 shadow-md shadow-[#fdb7c1] lg:col-span-3 lg:px-10 lg:py-10">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="relative z-10 flex min-h-[350px] w-full flex-col justify-between overflow-hidden rounded-3xl bg-[#fdb7c1] px-10 py-10 shadow-md shadow-[#fdb7c1] lg:col-span-3 lg:px-10 lg:py-10">
       <div className="relative z-10 flex justify-between">
         <div>
           <h3 className="text-3xl font-bold text-gray-50">GohanGo!! 🐵</h3>
@@ -39,7 +47,7 @@ function GohanGoCard() {
         height={250}
         alt="GohanGo!! image"
       />
-    </div>
+    </motion.div>
   )
 }
 

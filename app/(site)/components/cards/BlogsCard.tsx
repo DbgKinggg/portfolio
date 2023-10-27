@@ -1,6 +1,15 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
+
 function BlogsCard() {
     return (
-        <div className="relative flex bg-gradient-to-tr from-[#191919] to-black min-h-[250px] w-full flex-col overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-2 lg:px-10 lg:py-10">
+        <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            variants={cardVariants}
+            viewport={{ once: true }}
+            className="relative flex bg-gradient-to-tr from-[#191919] to-black min-h-[250px] w-full flex-col overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-2 lg:px-10 lg:py-10">
             <div className="absolute z-10 flex flex-col">
                 <h3 className="text-3xl font-bold text-gray-50">Blogs 📝</h3>
                 <a
@@ -14,7 +23,7 @@ function BlogsCard() {
                     Check out latest blogs 😈
                 </p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

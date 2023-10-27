@@ -1,8 +1,16 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import Image from 'next/image'
 
 function TwitterToolsCard() {
   return (
-    <div className="relative z-10 min-h-[260px] w-full rounded-3xl bg-[#808df8] px-10 py-10 lg:col-span-2 lg:px-10 lg:py-10">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="relative z-10 min-h-[260px] w-full rounded-3xl bg-[#808df8] px-10 py-10 lg:col-span-2 lg:px-10 lg:py-10">
       <h3 className="text-3xl font-bold text-gray-50">Twitter Tools ✖️</h3>
       <a
         className="text-gray-300"
@@ -22,7 +30,7 @@ function TwitterToolsCard() {
         sizes="100vw"
         alt="GohanGo!! image"
       />
-    </div>
+    </motion.div>
   )
 }
 

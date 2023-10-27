@@ -1,9 +1,16 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import Link from 'next/link'
 import Image from 'next/image'
 
 function AvatarMakerCard() {
   return (
-    <div
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
       className="highlight-border relative z-10 min-h-[300px] w-full overflow-hidden rounded-3xl px-10 py-10 lg:col-span-3 lg:px-10 lg:py-10"
       style={{
         background:
@@ -46,7 +53,7 @@ function AvatarMakerCard() {
         alt="GohanGo!! image"
         loading='eager'
       />
-    </div>
+    </motion.div>
   )
 }
 

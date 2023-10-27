@@ -1,11 +1,19 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import Link from 'next/link'
 
 function SocialWrapperCards() {
   return (
-    <div className="grid grid-cols-2 gap-x-2 lg:col-span-2 lg:gap-x-1 lg:gap-y-2">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="grid grid-cols-2 gap-x-2 lg:col-span-2 lg:gap-x-1 lg:gap-y-2">
       <TwitterCard />
       <ContactCard />
-    </div>
+    </motion.div>
   )
 }
 

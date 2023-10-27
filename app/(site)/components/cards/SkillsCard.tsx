@@ -1,3 +1,6 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import InfiniteLooper from '../InfiniteLooper'
 
 function SkillsCard() {
@@ -44,7 +47,12 @@ function SkillsCard() {
   const learningList = ['Svelte', 'SolidJS', 'SST', 'ChatGPT', 'Figma', 'Go']
 
   return (
-    <div className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="relative z-10 w-full overflow-hidden rounded-3xl bg-gradient-to-tr from-slate-800 to-slate-950 py-10 lg:col-span-4 lg:py-10">
       <h3 className="px-10 text-3xl font-bold text-gray-50">Techs that 👨‍💻</h3>
       <p className="mt-2 px-10 text-lg text-gray-400">I use...</p>
       <div className="masked-fade-out">
@@ -82,7 +90,7 @@ function SkillsCard() {
           </div>
         </InfiniteLooper>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

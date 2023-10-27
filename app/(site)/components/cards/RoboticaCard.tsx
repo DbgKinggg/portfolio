@@ -1,8 +1,16 @@
+"use client"
+import { motion } from 'framer-motion'
+import { cardVariants } from '@/utils/motion-variants'
 import Image from 'next/image'
 
 function RoboticaCard() {
   return (
-    <div className="relative flex min-h-[250px] w-full flex-col overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-6 lg:px-10 lg:py-10">
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={cardVariants}
+      viewport={{ once: true }}
+      className="relative flex min-h-[250px] w-full flex-col overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-6 lg:px-10 lg:py-10">
       <div className="absolute inset-0 bg-[#247587]/20 backdrop-blur-2xl" />
       <div className="absolute z-10 flex flex-col">
         <h3 className="text-3xl font-bold text-gray-50">CAFFÈ ROBOTICA ☕</h3>
@@ -32,7 +40,7 @@ function RoboticaCard() {
         className="absolute bottom-0 right-0 h-32 w-32 translate-y-1/4 opacity-30 lg:h-56 lg:w-56"
         alt="robotica icon"
       />
-    </div>
+    </motion.div>
   )
 }
 
