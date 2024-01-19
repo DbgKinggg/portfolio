@@ -10,7 +10,7 @@ function L2SummerCard() {
             whileInView="onscreen"
             variants={cardVariants}
             viewport={{ once: true }}
-            className="relative grid md:grid-cols-2 min-h-[250px] w-full overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-4 lg:px-10 lg:py-10">
+            className="relative grid md:grid-cols-2 min-h-[250px] w-full overflow-hidden rounded-3xl border-y border-y-white/50 px-10 py-10 md:mx-auto lg:col-span-6 lg:px-10 lg:py-10">
             <div className="absolute z-0 inset-0 bg-gradient-to-b backdrop-blur-2x opacity-70"
                 style={{
                     background: 'linear-gradient(to right bottom,rgb(255 255 255/10%),rgb(0 0 0/50%)), #1a53f4',

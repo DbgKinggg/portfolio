@@ -11,6 +11,7 @@ import LanguagesCard from './cards/LanguagesCard'
 import BlogsCard from './cards/BlogsCard'
 import L2SummerCard from './cards/L2SummerCard'
 import Footer from './Footer'
+import BurokkuCard from './cards/BurokkuCard'
 
 function MainPanel() {
   return (
@@ -19,8 +20,9 @@ function MainPanel() {
         <GradientBlob />
         <IntroCard />
         <SocialWrapperCards />
-        <L2SummerCard />
+        <BurokkuCard />
         <BlogsCard />
+        <L2SummerCard />
         <RoboticaCard />
         <GohanGoCard />
         <AvatarMakerCard />
